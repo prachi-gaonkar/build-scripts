@@ -1,0 +1,27 @@
+diff --git a/aws/src/test/java/org/apache/iceberg/aws/s3/MinioContainer.java b/aws/src/test/java/org/apache/iceberg/aws/s3/MinioContainer.java
+index b6a8d9609..2f12c94e4 100644
+--- a/aws/src/test/java/org/apache/iceberg/aws/s3/MinioContainer.java
++++ b/aws/src/test/java/org/apache/iceberg/aws/s3/MinioContainer.java
+@@ -29,7 +29,7 @@ public class MinioContainer extends GenericContainer<MinioContainer> {
+
+   private static final int DEFAULT_PORT = 9000;
+   private static final String DEFAULT_IMAGE = "minio/minio";
+-  private static final String DEFAULT_TAG = "edge";
++  private static final String DEFAULT_TAG = "RELEASE.2024-07-15T19-02-30Z";
+
+   private static final String MINIO_ACCESS_KEY = "MINIO_ACCESS_KEY";
+   private static final String MINIO_SECRET_KEY = "MINIO_SECRET_KEY";
+diff --git a/azure/src/test/java/org/apache/iceberg/azure/adlsv2/AzuriteContainer.java b/azure/src/test/java/org/apache/iceberg/azure/adlsv2/AzuriteContainer.java
+index 887758af4..40d74beb3 100644
+--- a/azure/src/test/java/org/apache/iceberg/azure/adlsv2/AzuriteContainer.java
++++ b/azure/src/test/java/org/apache/iceberg/azure/adlsv2/AzuriteContainer.java
+@@ -32,8 +32,8 @@ import org.testcontainers.containers.wait.strategy.LogMessageWaitStrategy;
+ public class AzuriteContainer extends GenericContainer<AzuriteContainer> {
+
+   private static final int DEFAULT_PORT = 10000; // default blob service port
+-  private static final String DEFAULT_IMAGE = "mcr.microsoft.com/azure-storage/azurite";
+-  private static final String DEFAULT_TAG = "3.30.0";
++  private static final String DEFAULT_IMAGE = "mcr.microsoft.com/azure-storage/azurite-ppc64le";
++  private static final String DEFAULT_TAG = "latest";
+   private static final String LOG_WAIT_REGEX =
+       "Azurite Blob service is successfully listening at .*";

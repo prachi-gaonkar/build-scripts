@@ -1,0 +1,12 @@
+{
+   "maintainer": "prachi-gaonkar",
+   "package_name": "iceberg",
+   "github_url": "https://github.com/apache/iceberg.git",
+   "version": "apache-iceberg-1.6.0",
+   "default_branch": "master",
+   "build_script": "apache-iceberg-1.6.0_ubi_9.3.sh",
+   "package_dir": "a/apache-iceberg", 
+   "docker_build": false,
+   "validate_build_script": true,
+   "use_non_root_user": false
+}

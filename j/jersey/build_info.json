@@ -1,15 +1,18 @@
 {
-    "maintainer": "pratibh-ibm",
+    "maintainer": "Prachi.Gaonkar@ibm.com",
     "package_name": "jersey",
     "github_url": "https://github.com/eclipse-ee4j/jersey.git",
-    "version": "3.1.7",
+    "version": "3.1.8",
     "default_branch": "2.x",
-    "build_script": "jersey_ubi_9.3.sh",
+    "build_script": "jersey_core-server_3.1.8_ubi9.3.sh",
     "package_dir": "j/jersey",
     "validate_build_script": true,
     "use_non_root_user": false,
     "docker_build": false,
-    "3.*.*": {
+    "3.1.8": {
+      "build_script": "jersey_core-server_3.1.8_ubi9.3.sh"
+    },
+    "3.1.7": {
       "build_script": "jersey_ubi_9.3.sh"
     }
   }
